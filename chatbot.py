@@ -1,9 +1,11 @@
-filename= input("Enter file name:")
+while True 
+   user = input("You:").lower()
 
-try:
-  with open(filename, "r") as file:
-    text= file.read()
-    words= text.split()
-    print("Total words:", len(words))
-except FileNotFoundError
-   print("File not found")
+   if user=="hello":
+     print("Bot:Hi!")
+   elif user == "how are you":
+     print("Bot: I'm fine , thanks!")
+   elif user == "bye":
+   else:
+     print("Bot: I don't understand.")
+    
